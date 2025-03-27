@@ -75,10 +75,10 @@
 
 #### Response Payload
 
-| status code | content-type     | response                                   |
-| ----------- | ---------------- | ------------------------------------------ |
-| 200         | application/json | { data: Array<[Node Object](#node-bject)>} |
-| 401         | application/json | {code: string, message: string}            |
+| status code | content-type     | response                                    |
+| ----------- | ---------------- | ------------------------------------------- |
+| 200         | application/json | { data: Array<[Node Object](#node-object)>} |
+| 401         | application/json | {code: string, message: string}             |
 
 </details>
 
@@ -97,10 +97,10 @@
 
 ### Response
 
-| status code | content-type     | response                            |
-| ----------- | ---------------- | ----------------------------------- |
-| 200         | application/json | { data: [Node Object](#node-bject)} |
-| 401         | application/json | {code: string, message: string}     |
+| status code | content-type     | response                             |
+| ----------- | ---------------- | ------------------------------------ |
+| 200         | application/json | { data: [Node Object](#node-object)} |
+| 401         | application/json | {code: string, message: string}      |
 
 </details>
 
@@ -128,7 +128,7 @@
 | types          | :white_large_square: | Vec<string> | Filter by event type                                                                 |
 | event_time_lte | :white_large_square: | int         | The timestamp is the time that the event time is less than or equal (unit: milisec)  |
 | event_time_gte | :white_large_square: | int         | The timestamp is the time that the event time is great than or equal (unit: milisec) |
-| limit          | :white_large_square: | int         | the maximum element of each requuest (range 10 - 500)                                |
+| limit          | :white_large_square: | int         | the maximum element of each request (range 10 - 500)                                 |
 
 ### Event Object
 
@@ -143,10 +143,10 @@
 
 ### Response
 
-| status code | content-type     | response                                     |
-| ----------- | ---------------- | -------------------------------------------- |
-| 200         | application/json | { data: Array<[Event Object](#event-bject)>} |
-| 401         | application/json | {code: string, message: string}              |
+| status code | content-type     | response                                      |
+| ----------- | ---------------- | --------------------------------------------- |
+| 200         | application/json | { data: Array<[Event Object](#event-object)>} |
+| 401         | application/json | {code: string, message: string}               |
 
 </details>
 
@@ -175,7 +175,7 @@
 | start_time_lte   | :white_large_square: | int         | The timestamp is the time that the event time is less than or equal (unit: milisec) |
 | start_time_gte   | :white_large_square: | int         | The timestamp is the time that the event time is less than or equal (unit: milisec) |
 | start_time_order | :white_large_square: | int         | order by start time of room. (1: asc, -1: desc)                                     |
-| limit            | :white_large_square: | int         | the maximum element of each requuest (range 10 - 500)                               |
+| limit            | :white_large_square: | int         | the maximum element of each request (range 10 - 500)                                |
 | offset           | :white_large_square: | int         | the start offset of first element from list                                         |
 | fields           | :white_large_square: | Vec<string> | Select field to show                                                                |
 
